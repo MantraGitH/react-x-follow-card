@@ -1,0 +1,36 @@
+.x-followCard {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+
+.x-followCard-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.x-followCard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.x-followCard-infoUserName {
+  opacity: 0.6;
+}
+
+.x-followCard-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.x-followCard-button {
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+}
