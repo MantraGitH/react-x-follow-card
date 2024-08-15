@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export function XFollowCard({ formatUserName, userName, name, isFollowing }) {
+export function XFollowCard({ children, userName, isFollowing }) {
   console.log(isFollowing);
   return (
     <article className="x-followCard">
@@ -10,10 +10,8 @@ export function XFollowCard({ formatUserName, userName, name, isFollowing }) {
           alt=""
         />
         <div className="x-followCard-info">
-          <strong>{name}</strong>
-          <span className="x-followCard-infoUserName ">
-            {formatUserName(userName)}
-          </span>
+          <strong>{children}</strong>
+          <span className="x-followCard-infoUserName ">@{userName}</span>
         </div>
       </header>
       <aside>
