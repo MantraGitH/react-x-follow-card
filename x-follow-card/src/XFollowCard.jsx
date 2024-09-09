@@ -1,6 +1,7 @@
 // eslint-disable-next-line react/prop-types
 export function XFollowCard({ children, userName, isFollowing }) {
-  console.log(isFollowing);
+  const text = isFollowing ? "Siguiendo" : "Seguir";
+  const buttonClassName = isFollowing ? "x-followCard-button is-Following" : "x-followCard-button"
   return (
     <article className="x-followCard">
       <header className="x-followCard-header">
@@ -15,7 +16,7 @@ export function XFollowCard({ children, userName, isFollowing }) {
         </div>
       </header>
       <aside>
-        <button className="x-followCard-button">Follow</button>
+        <button className={buttonClassName}>{text}</button>
       </aside>
     </article>
   );
