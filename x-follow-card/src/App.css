@@ -39,7 +39,7 @@
 }
 
 .x-followCard-button.is-Following{
-  border: 1px solid red;
+  border: 1px solid;
 
 }
 
@@ -50,4 +50,5 @@
 
 .x-followCard-button.is-Following:hover{
   background: red;
+  border: red;
 }

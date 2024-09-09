@@ -1,7 +1,18 @@
+import { useState } from "react";
+
 // eslint-disable-next-line react/prop-types
-export function XFollowCard({ children, userName, isFollowing }) {
+export function XFollowCard({ children, userName, }) {
+  const [isFollowing, setIsFollowing] = useState(false)
+
+
   const text = isFollowing ? "Siguiendo" : "Seguir";
-  const buttonClassName = isFollowing ? "x-followCard-button is-Following" : "x-followCard-button"
+  const buttonClassName = isFollowing
+    ? "x-followCard-button is-Following"
+    : "x-followCard-button";
+
+    const handleClick = () => {
+      setIsFollowing(!isFollowing)
+    }
   return (
     <article className="x-followCard">
       <header className="x-followCard-header">
@@ -16,7 +27,7 @@ export function XFollowCard({ children, userName, isFollowing }) {
         </div>
       </header>
       <aside>
-        <button className={buttonClassName}>{text}</button>
+        <button className={buttonClassName} onClick={handleClick}>{text}</button>
       </aside>
     </article>
   );
