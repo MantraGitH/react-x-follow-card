@@ -40,15 +40,18 @@
 
 .x-followCard-button.is-Following{
   border: 1px solid;
-
+  color: whitesmoke;
+background-color: #0f1419;
 }
 
 .x-followCard-button:hover {
   background-color: #0f1419;
-  color: white
+  color: whitesmoke
 }
 
 .x-followCard-button.is-Following:hover{
-  background: red;
-  border: red;
+  color: red;
+  border: 1px solid red;
+  background: #800000;
+  
 }
