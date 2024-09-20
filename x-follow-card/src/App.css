@@ -35,23 +35,41 @@
   padding: 6px 16px;
   font-weight: bold;
   border: 1px solid #000;
-  transition: .3s ease background-color;
-}
-
-.x-followCard-button.is-Following{
-  border: 1px solid;
-  color: whitesmoke;
-background-color: #0f1419;
+  transition: 0.3s ease background-color;
 }
 
 .x-followCard-button:hover {
-  background-color: #0f1419;
-  color: whitesmoke
+  opacity: 0.8;
 }
 
-.x-followCard-button.is-Following:hover{
-  color: red;
-  border: 1px solid red;
-  background: #800000;
-  
+.x-followCard-text {
+  display: block;
+}
+
+.x-followCard-button.is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+  width: 140px;
+}
+
+/* Cambios de color en hover cuando se sigue */
+.x-followCard-button.is-following:hover {
+  background-color: rgba(255, 0, 0, 0.178); /* Fondo rojo claro */
+  color: red; /* Texto rojo */
+  border: 1px solid red; /* Borde rojo */
+  transition: 0.3s ease all;
+  opacity: 1;
+}
+
+.x-followCard-button.is-following:hover .x-followCard-stopFollow {
+  display: block;
+}
+
+.x-followCard-button.is-following:hover .x-followCard-text {
+  display: none;
+}
+
+.x-followCard-stopFollow {
+  display: none;
 }
