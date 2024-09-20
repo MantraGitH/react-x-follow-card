@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-export function XFollowCard({ children, userName, }) {
-  const [isFollowing, setIsFollowing] = useState(false)
+export function XFollowCard({ children, userName, initialIsFollowing}) {
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
 
   const text = isFollowing ? "Siguiendo" : "Seguir";
