@@ -6,7 +6,7 @@ export function XFollowCard({ children, userName }) {
 
   const text = isFollowing ? "Siguiendo" : "Seguir";
   const buttonClassName = isFollowing
-    ? "x-followCard-button is-following" // Clases en minúsculas
+    ? "x-followCard-button is-following" 
     : "x-followCard-button";
 
   const handleClick = () => {
