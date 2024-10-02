@@ -30,4 +30,4 @@ Este proyecto es una simulación interactiva de una Follow Card para la red soci
 -   `Interactividad con Animaciones`: El botón de "seguir" cambia de estilo al hacer hover, mostrando el texto "Dejar de seguir" y ocultando el texto original "Siguiendo", lo que añade una capa de interactividad visual.
  
 
-(https://vimeo.com/1015412090?share=copy)
+[Demo del proyecto Aquí](https://vimeo.com/1015412090?share=copy)
